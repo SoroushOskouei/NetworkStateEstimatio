@@ -14,8 +14,8 @@ $$ \[ S(t) = \text{clip}\left(\sum_{i=1}^5 a_i \cdot \sin(i \cdot t) + \sum_{i=1
 
 where:
 - $( a_i \)$ and $\( b_i \)$  are the coefficients for the sine and cosine terms, respectively.
-- $$ \( t \)$$  is the current time point, linearly spaced between 0 and 10 over 101 points.
-- $$ \( S(t) \)$$  is the computed state, clipped between 0 and 50 to ensure it remains within this range.
+- $( t \)$  is the current time point, linearly spaced between 0 and 10 over 101 points.
+- $( S(t) \)$  is the computed state, clipped between 0 and 50 to ensure it remains within this range.
 
 ### Gaussian Process Regression
 A Gaussian Process (GP) model is used to predict the state of each node at a future time point (t=101) based on its states from t=0 to t=100. The GP model employs a kernel composed of a Radial Basis Function (RBF) and a constant kernel, which are configured with specific length scales and variance bounds:
@@ -23,8 +23,8 @@ A Gaussian Process (GP) model is used to predict the state of each node at a fut
 $$ \[ K(x, x') = \sigma^2 \exp\left(-\frac{(x - x')^2}{2l^2}\right) + c \]$$ 
 
 where:
-- $$ \( \sigma \)$$ and $$\( l \)$$  are parameters of the RBF kernel controlling the variance and length scale, respectively.
-- $$ \( c \)$$  is the constant term from the Constant Kernel.
+- $( \sigma \)$ and $( l \)$  are parameters of the RBF kernel controlling the variance and length scale, respectively.
+- $( c \)$  is the constant term from the Constant Kernel.
 
 The model is fitted for each node independently, using their respective time series data.
 
