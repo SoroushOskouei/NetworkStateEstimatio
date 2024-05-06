@@ -10,7 +10,7 @@ A random graph is generated using the Erdős-Rényi model, where each pair of no
 ### State Simulation
 Each node in the graph is assigned a set of coefficients for sine and cosine functions. These coefficients determine the state of the node at each time point based on the following formula:
 
-$ \[ S(t) = \text{clip}\left(\sum_{i=1}^5 a_i \cdot \sin(i \cdot t) + \sum_{i=1}^5 b_i \cdot \cos(i \cdot t) + 25, 0, 50\right) \]$ 
+$$ \[ S(t) = \text{clip}\left(\sum_{i=1}^5 a_i \cdot \sin(i \cdot t) + \sum_{i=1}^5 b_i \cdot \cos(i \cdot t) + 25, 0, 50\right) \]$$
 
 where:
 - $ \( a_i \) and \( b_i \)$  are the coefficients for the sine and cosine terms, respectively.
