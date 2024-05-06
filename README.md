@@ -30,3 +30,6 @@ The model is fitted for each node independently, using their respective time ser
 
 ### Visualization
 The network graph is visualized with nodes colored according to their true and predicted states at t=101. Two subplots are provided to compare the actual states and the Gaussian Process predictions side by side.
+
+![image](https://github.com/SoroushOskouei/NetworkStateEstimation/assets/57323986/b919a994-c9e8-42a2-82a8-80620701f78b)
+
