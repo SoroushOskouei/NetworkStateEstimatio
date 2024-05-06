@@ -13,7 +13,7 @@ Each node in the graph is assigned a set of coefficients for sine and cosine fun
 $$ \[ S(t) = \text{clip}\left(\sum_{i=1}^5 a_i \cdot \sin(i \cdot t) + \sum_{i=1}^5 b_i \cdot \cos(i \cdot t) + 25, 0, 50\right) \]$$
 
 where:
-- $$ \( a_i \)$$ and $$\( b_i \)$$  are the coefficients for the sine and cosine terms, respectively.
+- $( a_i \)$ and $\( b_i \)$  are the coefficients for the sine and cosine terms, respectively.
 - $$ \( t \)$$  is the current time point, linearly spaced between 0 and 10 over 101 points.
 - $$ \( S(t) \)$$  is the computed state, clipped between 0 and 50 to ensure it remains within this range.
 
